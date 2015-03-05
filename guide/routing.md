@@ -123,7 +123,7 @@ app.get(/a/, function(req, res) {
   res.send('/a/')
 })
 
-// will match butterfly, dagonfly; but not butterflyman, dragonfly man, and so on
+// will match butterfly, dragonfly; but not butterflyman, dragonfly man, and so on
 app.get(/.*fly$/, function(req, res) {
   res.send('/.*fly$/')
 })
